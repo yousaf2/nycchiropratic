@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" rel="stylesheet" />
+	<link href="css/custom.css" rel="stylesheet" type="text/css" />
+	<title>Patient Intake Form - NYC Chiropractic, Physical Therapy &amp; Acupuncture Pllc</title>
+</head>
+<body data-new-gr-c-s-loaded="14.993.0">
+<main class="container">
+<div class="row">
+<form action="sendmail.php" class="col s12" method="post">
+<center><a href="http://www.nycspinecare.com/"><img class="responsive-img" src="img/logo.jpg" /></a></center>
+
+<h1>Patient Intake Form</h1>
+
+<h2>Information</h2>
+
+<div class="row">
+<div class="input-field col s8"><input id="name" name="name" type="text" /> <label for="name">Name</label></div>
+
+<div class="input-field col s4"><input class="datepicker" id="date" name="date" type="date" /> <label for="date">Date (mm/dd/yyyy)</label></div>
+</div>
+
+<div class="row">
+<div class="input-field col s6"><input id="maddress" name="maddress" type="text" /> <label for="maddress">Mailing Address</label></div>
+
+<div class="input-field col s6 l3"><input id="city" name="city" type="text" /> <label for="city">City</label></div>
+
+<div class="input-field col s3 l2"><input id="state" maxlength="2" name="state" type="text" /> <label for="state">State</label></div>
+
+<div class="input-field col s3 l1"><input id="zip" name="zip" type="text" /> <label for="zip">Zip</label></div>
+</div>
+
+<div class="row">
+<div class="input-field col s8"><input id="emaddress" name="emaddress" type="text" /> <label for="emaddress">Email Address</label></div>
+
+<div class="input-field col s4"><input id="homenr" name="homenr" type="text" /> <label for="homenr">Home #</label></div>
+</div>
+
+<div class="row">
+<div class="input-field col s4"><input id="cellnr" name="cellnr" type="text" /> <label for="cellnr">Cell #</label></div>
+
+<div class="input-field col s4"><input id="worknr" name="worknr" type="text" /> <label for="worknr">Work #</label></div>
+
+<div class="col s4">
+<p>Can we call you at work?</p>
+<input class="with-gap" id="test1" name="workcall" type="radio" value="Yes" /> <label class="input-inline" for="test1">Yes</label> <input class="with-gap" id="test2" name="workcall" type="radio" value="No" /> <label for="test2">No</label></div>
+</div>
+
+<div class="row">
+<div class="col s12">
+<p>Do you prefer to have appointments confirmed by:</p>
+<input class="filled-in" id="text" name="contactpreference[]" type="checkbox" value="Text" /> <label class="input-inline" for="text">Text</label> <input class="filled-in" id="email" name="contactpreference[]" type="checkbox" value="Email" /> <label class="input-inline" for="email">Email</label> <input class="filled-in" id="phone" name="contactpreference[]" type="checkbox" value="Phone" /> <label class="input-inline" for="phone">Phone</label> (check all that apply)</div>
+</div>
+
+<div class="row">
+<div class="input-field col s4"><input class="datepicker" id="bdate" name="bdate" type="date" /> <label for="bdate">Date of Birth (mm/dd/yyyy)</label></div>
+
+<div class="input-field col s4"><input id="secnr" name="secnr" type="text" /> <label for="secnr">Social Security #</label></div>
+
+<div class="col s4">
+<p>Sex</p>
+<input class="with-gap" id="male" name="gender" type="radio" value="Male" /> <label class="input-inline" for="male">Male</label> <input class="with-gap" id="female" name="gender" type="radio" value="Female" /> <label for="female">Female</label></div>
+</div>
+
+<div class="row">
+<div class="col s12">
+<p>Marital Status</p>
+<input class="with-gap" id="single" name="status" type="radio" value="Single" /> <label class="input-inline" for="single">Single</label> <input class="with-gap" id="married" name="status" type="radio" value="Married" /> <label class="input-inline" for="married">Married</label> <input class="with-gap" id="divorced" name="status" type="radio" value="Divorced" /> <label class="input-inline" for="divorced">Divorced</label> <input class="with-gap" id="widowed" name="status" type="radio" value="Widowed" /> <label class="input-inline" for="widowed">Widowed</label> <input class="Separated" id="separated" name="status" type="radio" value="Single" /> <label class="input-inline" for="separated">Separated</label> <input class="with-gap" id="minor" name="status" type="radio" value="Minor" /> <label class="input-inline" for="minor">Minor</label></div>
+</div>
+
+<div class="row">
+<div class="input-field col s7"><input id="occup" name="occup" type="text" /> <label for="occup">Occupation</label></div>
+
+<div class="input-field col s5"><input id="emp" name="emp" type="text" /> <label for="emp">Employer</label></div>
+</div>
+
+<div class="row">
+<div class="input-field col s7"><input id="empaddress" name="empaddress" type="text" /> <label for="empaddress">Employer Address</label></div>
+
+<div class="input-field col s5"><input id="phonenr" name="phonenr" type="text" /> <label for="phonenr">Phone #</label></div>
+</div>
+
+<div class="row">
+<div class="col s12">Person to be notified in the case of an emergency:
+<div class="input-field inline"><input id="emergname" name="emergname" type="text" /> <label for="emergname">Name</label></div>
+
+<div class="input-field inline"><input id="emergrel" name="emergrel" type="text" /> <label for="emergrel">Relation</label></div>
+
+<div class="input-field inline"><input id="emergphone" name="emergphone" type="text" /> <label for="emergphone">Phone #</label></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12 input-field"><input id="ref" name="ref" type="text" /> <label for="ref">How did you hear about our practice?</label></div>
+</div>
+
+<h2>Problem</h2>
+
+<div class="row">
+<div class="col s12 input-field"><input id="one" name="one" type="text" /> <label for="one">1. What is your chief complaint?</label></div>
+</div>
+
+<div class="row">
+<div class="col s12 input-field"><input id="two" name="two" type="text" /> <label for="two">2. How do you think your problem began?</label></div>
+</div>
+
+<div class="row">
+<div class="col s6">
+<p>3. Is today&#39;s problem caused by an:</p>
+<input class="filled-in" id="auto" name="cause[]" type="checkbox" value="Auto" /> <label class="input-inline" for="auto">Auto Accident</label> <input class="filled-in" id="injurywork" name="cause[]" type="checkbox" value="Injury at Work" /> <label class="input-inline" for="injurywork">Injury at work</label> <input class="filled-in" id="other1" name="cause[]" type="checkbox" value="Other" /> <label class="input-inline" for="other1">Other:</label></div>
+
+<div class="input-field col s6"><input id="other2" name="otherexp1" style="margin-top: 5px;" type="text" /></div>
+</div>
+
+<div class="row">
+<div class="col s12 target">
+<p><strong>4. Indicate on the drawings below where you have pain/symptoms<br />
+(appear a red circle on the location by clicking on it):</strong></p>
+<button class="btn waves-effect red" id="clear-circles" type="button">Clear circles</button><canvas height="410" id="c" style="margin-top: 10px;" width="320"></canvas></div>
+</div>
+
+<div class="row">
+<div class="col s12">
+<p>5. How long have you had this problem?</p>
+
+<div class="input-field col s3"><input id="fivedays" name="fivedays" type="number" /> <label for="fivedays">Days</label></div>
+
+<div class="input-field col s3"><input id="fiveweeks" name="fiveweeks" type="number" /> <label for="fiveweeks">Weeks</label></div>
+
+<div class="input-field col s3"><input id="fivemonths" name="fivemonths" type="number" /> <label for="fivemonths">Months</label></div>
+
+<div class="input-field col s3"><input id="fiveyears" name="fiveyears" type="number" /> <label for="fiveyears">Years</label></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s6">
+<p>6. How often do you experience your symptoms?</p>
+<input class="with-gap" id="inter" name="often" type="radio" value="Intermittently" /> <label class="input-inline" for="inter">Intermittently (1-25% of the time)</label> <input class="with-gap" id="occas" name="often" type="radio" value="Occasionally" /> <label class="input-inline" for="occas">Occasionally (26-50% of the time)</label> <input class="with-gap" id="freq" name="often" type="radio" value="Frequently" /> <label class="input-inline" for="freq">Frequently (51-75% of the time)</label> <input class="with-gap" id="constant" name="often" type="radio" value="Constantly" /> <label class="input-inline" for="constant">Constantly (76-100% of the time)</label></div>
+</div>
+
+<div class="row">
+<div class="col s12">
+<p>7. How would you describe the pain?</p>
+<input class="filled-in" id="sharp" name="describe[]" type="checkbox" value="sharp" /> <label class="input-inline" for="sharp">Sharp</label> <input class="filled-in" id="dull" name="describe[]" type="checkbox" value="dull" /> <label class="input-inline" for="dull">Dull</label> <input class="filled-in" id="burning" name="describe[]" type="checkbox" value="burning" /> <label class="input-inline" for="burning">Burning</label> <input class="filled-in" id="motion" name="describe[]" type="checkbox" value="motion" /> <label class="input-inline" for="motion">Shooting with motion</label> <input class="filled-in" id="shooting" name="describe[]" type="checkbox" value="shooting" /> <label class="input-inline" for="shooting">Shooting</label> <input class="filled-in" id="numb" name="describe[]" type="checkbox" value="numb" /> <label class="input-inline" for="numb">Numb</label> <input class="filled-in" id="stiff" name="describe[]" type="checkbox" value="Stiff" /> <label class="input-inline" for="stiff">Stiff</label> <input class="filled-in" id="diffuse" name="describe[]" type="checkbox" value="diffuse" /> <label class="input-inline" for="diffuse">Diffuse</label> <input class="filled-in" id="achy" name="describe[]" type="checkbox" value="achy" /> <label class="input-inline" for="achy">Achy</label> <input class="filled-in" id="sharpmotion" name="describe[]" type="checkbox" value="Sharpmotion" /> <label class="input-inline" for="sharpmotion">Sharp with motion</label> <input class="filled-in" id="tingly" name="describe[]" type="checkbox" value="tingly" /> <label class="input-inline" for="tingly">Tingly</label> <input class="filled-in" id="other3" name="describe[]" type="checkbox" value="Other" /> <label class="input-inline" for="other3">Other:</label></div>
+
+<div class="input-field col s12"><input id="other4" name="otherexp2" style="margin-top: 5px;" type="text" /></div>
+</div>
+
+<div class="row">
+<div class="col s12">
+<p>8. How are your symptoms changing with time?</p>
+<input class="with-gap" id="worse" name="changing" type="radio" value="Worse" /> <label class="input-inline" for="worse">Getting Worse</label> <input class="with-gap" id="same" name="changing" type="radio" value="same" /> <label class="input-inline" for="same">Staying the Same</label> <input class="with-gap" id="better" name="changing" type="radio" value="better" /> <label class="input-inline" for="better">Getting Better</label></div>
+</div>
+
+<div class="row">
+<div class="col s12">9. Using a scale from 0-10 (10 being the worst), how would you rate your problem?
+<div class="input-field inline"><input max="10" min="0" name="scale" type="number" /></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">
+<p>10. Who else have you seen for your problem?</p>
+<input class="filled-in" id="chiro" name="else[]" type="checkbox" value="Chiropractor" /> <label class="input-inline" for="chiro">Chiropractor</label> <input class="filled-in" id="neuro" name="else[]" type="checkbox" value="Neurologist" /> <label class="input-inline" for="neuro">Neurologist</label> <input class="filled-in" id="care" name="else[]" type="checkbox" value="Primary Care" /> <label class="input-inline" for="care">Primary Care Physician</label> <input class="filled-in" id="er" name="else[]" type="checkbox" value="ER" /> <label class="input-inline" for="er">ER Physician</label> <input class="filled-in" id="nobody" name="else[]" type="checkbox" value="No one" /> <label class="input-inline" for="nobody">No one</label> <input class="filled-in" id="ortho" name="else[]" type="checkbox" value="Ortho" /> <label class="input-inline" for="ortho">Orthopedist</label> <input class="filled-in" id="massage" name="else[]" type="checkbox" value="Massage" /> <label class="input-inline" for="massage">Massage Therapist</label> <input class="filled-in" id="physical" name="else[]" type="checkbox" value="Physical Therapist" /> <label class="input-inline" for="physical">Physical Therapist</label> <input class="filled-in" id="other5" name="else[]" type="checkbox" value="Other" /> <label class="input-inline" for="other5">Other:</label></div>
+
+<div class="input-field col s12"><input id="other6" name="otherexp3" style="margin-top: 5px;" type="text" /></div>
+</div>
+
+<div class="row">
+<div class="col s12">
+<p>11. Do you consider this problem to be severe?</p>
+<input class="with-gap" id="ye" name="severe" type="radio" value="Yes" /> <label class="input-inline" for="ye">Yes</label> <input class="with-gap" id="ye2" name="severe" type="radio" value="Yes at times" /> <label class="input-inline" for="ye2">Yes, at times</label> <input class="with-gap" id="na" name="severe" type="radio" value="No" /> <label class="input-inline" for="na">No</label></div>
+</div>
+
+<div class="row">
+<div class="col s12 input-field"><input id="whatbetter" name="whatbetter" type="text" /> <label for="whatbetter">12. What makes your problem better?</label></div>
+</div>
+
+<div class="row">
+<div class="col s12 input-field"><input id="whatworse" name="whatworse" type="text" /> <label for="whatworse">13. What makes your problem worse?</label></div>
+</div>
+
+<p>14. What is your:</p>
+
+<div class="row">
+<div class="col s4 input-field"><input id="height" name="height" type="text" /> <label for="height">Height (ft/inch)</label></div>
+
+<div class="col s4 input-field"><input id="weight" name="weight" type="number" /> <label for="weight">Weight (lbs.)</label></div>
+
+<div class="col s4 input-field"><input id="age" name="age" type="number" /> <label for="age">Age</label></div>
+</div>
+
+<div class="row">
+<div class="col s12">
+<p>15. How would you rate your overall Health?</p>
+<input class="with-gap" id="exc" name="health" type="radio" value="Excellent" /> <label class="input-inline" for="exc">Excellent</label> <input class="with-gap" id="verygd" name="health" type="radio" value="Very Good" /> <label class="input-inline" for="verygd">Very good</label> <input class="with-gap" id="gd" name="health" type="radio" value="Good" /> <label class="input-inline" for="gd">Good</label> <input class="with-gap" id="fair" name="health" type="radio" value="Fair" /> <label class="input-inline" for="fair">Fair</label> <input class="with-gap" id="poor" name="health" type="radio" value="Poor" /> <label class="input-inline" for="poor">Poor</label></div>
+</div>
+
+<div class="row">
+<div class="col s12">
+<p>16. What type of exercise do you do?</p>
+<input class="with-gap" id="str" name="typeexc" type="radio" value="Strenuous" /> <label class="input-inline" for="str">Strenuous</label> <input class="with-gap" id="mod" name="typeexc" type="radio" value="Moderate" /> <label class="input-inline" for="mod">Moderate</label> <input class="with-gap" id="light" name="typeexc" type="radio" value="Light" /> <label class="input-inline" for="light">Light</label> <input class="with-gap" id="nn" name="typeexc" type="radio" value="None" /> <label class="input-inline" for="nn">None</label></div>
+</div>
+
+<p>17. What is your daily intake of the following?</p>
+
+<div class="row">
+<div class="col s4">Caffeine
+<div class="input-field inline"><input id="caff" name="caffeine" type="number" /> <label for="caff">cups/day</label></div>
+</div>
+
+<div class="col s4">Alcohol
+<div class="input-field inline"><input id="alc" name="alcohol" type="number" /> <label for="alc">drinks/wk</label></div>
+</div>
+
+<div class="col s4">Cigarettes
+<div class="input-field inline"><input id="cig" name="cigarets" type="number" /> <label for="cig">packs/day</label></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">
+<p>18. Indicate if you have any immediate family members with any of the following:</p>
+<input class="filled-in" id="rheum" name="disease[]" type="checkbox" value="Rheumatoid" /> <label class="input-inline" for="rheum">Rheumatoid Arthritis</label> <input class="filled-in" id="diabetes" name="disease[]" type="checkbox" value="Diabetes" /> <label class="input-inline" for="diabetes">Diabetes</label> <input class="filled-in" id="heart" name="disease[]" type="checkbox" value="Heart Problems" /> <label class="input-inline" for="heart">Heart Problems</label> <input class="filled-in" id="cancer" name="disease[]" type="checkbox" value="Cancer" /> <label class="input-inline" for="cancer">Cancer</label> <input class="filled-in" id="other7" name="disease[]" type="checkbox" value="Other" /> <label class="input-inline" for="other7">Other:</label></div>
+
+<div class="input-field col s12"><input id="other8" name="otherexp4" style="margin-top: 5px;" type="text" /></div>
+</div>
+
+<p>19. For each of the conditions listed below, place a check in the &quot;past&quot; column if you have had the condition in the past. If you presently have a condition listed below, place a check in the &quot;present&quot; column.</p>
+
+<div class="row">
+<div class="col s12 l4"><span style="margin-right: 10px;">Headaches</span> <input class="filled-in" id="past1" name="issue1[]" type="checkbox" value="Past" /> <label class="input-inline" for="past1">Past</label> <input class="filled-in" id="present1" name="issue1[]" type="checkbox" value="Present" /> <label class="input-inline" for="present1">Present</label><br />
+<span style="margin-right: 10px;">Neck Pain</span> <input class="filled-in" id="past2" name="issue2[]" type="checkbox" value="Past" /> <label class="input-inline" for="past2">Past</label> <input class="filled-in" id="present2" name="issue2[]" type="checkbox" value="Present" /> <label class="input-inline" for="present2">Present</label><br />
+<span style="margin-right: 10px;">Upper Back Pain</span> <input class="filled-in" id="past3" name="issue3[]" type="checkbox" value="Past" /> <label class="input-inline" for="past3">Past</label> <input class="filled-in" id="present3" name="issue3[]" type="checkbox" value="Present" /> <label class="input-inline" for="present3">Present</label><br />
+<span style="margin-right: 10px;">Mid Back Pain</span> <input class="filled-in" id="past4" name="issue4[]" type="checkbox" value="Past" /> <label class="input-inline" for="past4">Past</label> <input class="filled-in" id="present4" name="issue4[]" type="checkbox" value="Present" /> <label class="input-inline" for="present4">Present</label><br />
+<span style="margin-right: 10px;">Low Back Pain</span> <input class="filled-in" id="past5" name="issue5[]" type="checkbox" value="Past" /> <label class="input-inline" for="past5">Past</label> <input class="filled-in" id="present5" name="issue5[]" type="checkbox" value="Present" /> <label class="input-inline" for="present5">Present</label><br />
+<span style="margin-right: 10px;">Shoulder Pain</span> <input class="filled-in" id="past6" name="issue6[]" type="checkbox" value="Past" /> <label class="input-inline" for="past6">Past</label> <input class="filled-in" id="present6" name="issue6[]" type="checkbox" value="Present" /> <label class="input-inline" for="present6">Present</label><br />
+<span style="margin-right: 10px;">Elbow/Upper Arm Pain</span> <input class="filled-in" id="past7" name="issue7[]" type="checkbox" value="Past" /> <label class="input-inline" for="past7">Past</label> <input class="filled-in" id="present7" name="issue7[]" type="checkbox" value="Present" /> <label class="input-inline" for="present7">Present</label><br />
+<span style="margin-right: 10px;">Wrist Pain</span> <input class="filled-in" id="past8" name="issue8[]" type="checkbox" value="Past" /> <label class="input-inline" for="past8">Past</label> <input class="filled-in" id="present8" name="issue8[]" type="checkbox" value="Present" /> <label class="input-inline" for="present8">Present</label><br />
+<span style="margin-right: 10px;">Hand Pain</span> <input class="filled-in" id="past9" name="issue9[]" type="checkbox" value="Past" /> <label class="input-inline" for="past9">Past</label> <input class="filled-in" id="present9" name="issue9[]" type="checkbox" value="Present" /> <label class="input-inline" for="present9">Present</label><br />
+<span style="margin-right: 10px;">Hip Pain</span> <input class="filled-in" id="past10" name="issue10[]" type="checkbox" value="Past" /> <label class="input-inline" for="past10">Past</label> <input class="filled-in" id="present10" name="issue10[]" type="checkbox" value="Present" /> <label class="input-inline" for="present10">Present</label><br />
+<span style="margin-right: 10px;">Upper Leg Pain</span> <input class="filled-in" id="past11" name="issue11[]" type="checkbox" value="Past" /> <label class="input-inline" for="past11">Past</label> <input class="filled-in" id="present11" name="issue11[]" type="checkbox" value="Present" /> <label class="input-inline" for="present11">Present</label><br />
+<span style="margin-right: 10px;">Knee Pain</span> <input class="filled-in" id="past12" name="issue12[]" type="checkbox" value="Past" /> <label class="input-inline" for="past12">Past</label> <input class="filled-in" id="present12" name="issue12[]" type="checkbox" value="Present" /> <label class="input-inline" for="present12">Present</label><br />
+<span style="margin-right: 10px;">Ankle/Foot Pain</span> <input class="filled-in" id="past13" name="issue13[]" type="checkbox" value="Past" /> <label class="input-inline" for="past13">Past</label> <input class="filled-in" id="present13" name="issue13[]" type="checkbox" value="Present" /> <label class="input-inline" for="present13">Present</label><br />
+<span style="margin-right: 10px;">Jaw Pain</span> <input class="filled-in" id="past14" name="issue14[]" type="checkbox" value="Past" /> <label class="input-inline" for="past14">Past</label> <input class="filled-in" id="present14" name="issue14[]" type="checkbox" value="Present" /> <label class="input-inline" for="present14">Present</label><br />
+<span style="margin-right: 10px;">Joint Pain/Stiffness</span> <input class="filled-in" id="past15" name="issue15[]" type="checkbox" value="Past" /> <label class="input-inline" for="past15">Past</label> <input class="filled-in" id="present15" name="issue15[]" type="checkbox" value="Present" /> <label class="input-inline" for="present15">Present</label><br />
+<span style="margin-right: 10px;">Muscular Incoordination</span> <input class="filled-in" id="past16" name="issue16[]" type="checkbox" value="Past" /> <label class="input-inline" for="past16">Past</label> <input class="filled-in" id="present16" name="issue16[]" type="checkbox" value="Present" /> <label class="input-inline" for="present16">Present</label><br />
+<span style="margin-right: 10px;">Arthritis</span> <input class="filled-in" id="past17" name="issue17[]" type="checkbox" value="Past" /> <label class="input-inline" for="past17">Past</label> <input class="filled-in" id="present17" name="issue17[]" type="checkbox" value="Present" /> <label class="input-inline" for="present17">Present</label><br />
+<span style="margin-right: 10px;">Rheumatoid Arthritis</span> <input class="filled-in" id="past18" name="issue18[]" type="checkbox" value="Past" /> <label class="input-inline" for="past18">Past</label> <input class="filled-in" id="present18" name="issue18[]" type="checkbox" value="Present" /> <label class="input-inline" for="present18">Present</label><br />
+<span style="margin-right: 10px;">Systemic Lupu</span> <input class="filled-in" id="past19" name="issue19[]" type="checkbox" value="Past" /> <label class="input-inline" for="past19">Past</label> <input class="filled-in" id="present19" name="issue19[]" type="checkbox" value="Present" /> <label class="input-inline" for="present19">Present</label></div>
+
+<div class="col s12 l4"><span style="margin-right: 10px;">Cancer</span> <input class="filled-in" id="past20" name="issue20[]" type="checkbox" value="Past" /> <label class="input-inline" for="past20">Past</label> <input class="filled-in" id="present20" name="issue20[]" type="checkbox" value="Present" /> <label class="input-inline" for="present20">Present</label><br />
+<span style="margin-right: 10px;">Tumor</span> <input class="filled-in" id="past21" name="issue21[]" type="checkbox" value="Past" /> <label class="input-inline" for="past21">Past</label> <input class="filled-in" id="present21" name="issue21[]" type="checkbox" value="Present" /> <label class="input-inline" for="present21">Present</label><br />
+<span style="margin-right: 10px;">Epilepsy</span> <input class="filled-in" id="past22" name="issue22[]" type="checkbox" value="Past" /> <label class="input-inline" for="past22">Past</label> <input class="filled-in" id="present22" name="issue22[]" type="checkbox" value="Present" /> <label class="input-inline" for="present22">Present</label><br />
+<span style="margin-right: 10px;">Visual Disturbances</span> <input class="filled-in" id="past23" name="issue23[]" type="checkbox" value="Past" /> <label class="input-inline" for="past23">Past</label> <input class="filled-in" id="present23" name="issue23[]" type="checkbox" value="Present" /> <label class="input-inline" for="present23">Present</label><br />
+<span style="margin-right: 10px;">Stroke</span> <input class="filled-in" id="past24" name="issue24[]" type="checkbox" value="Past" /> <label class="input-inline" for="past24">Past</label> <input class="filled-in" id="present24" name="issue24[]" type="checkbox" value="Present" /> <label class="input-inline" for="present24">Present</label><br />
+<span style="margin-right: 10px;">Dizziness</span> <input class="filled-in" id="past25" name="issue25[]" type="checkbox" value="Past" /> <label class="input-inline" for="past25">Past</label> <input class="filled-in" id="present25" name="issue25[]" type="checkbox" value="Present" /> <label class="input-inline" for="present25">Present</label><br />
+<span style="margin-right: 10px;">High Blood Pressure</span> <input class="filled-in" id="past26" name="issue26[]" type="checkbox" value="Past" /> <label class="input-inline" for="past26">Past</label> <input class="filled-in" id="present26" name="issue26[]" type="checkbox" value="Present" /> <label class="input-inline" for="present26">Present</label><br />
+<span style="margin-right: 10px;">Heart Attack</span> <input class="filled-in" id="past27" name="issue27[]" type="checkbox" value="Past" /> <label class="input-inline" for="past27">Past</label> <input class="filled-in" id="present27" name="issue27[]" type="checkbox" value="Present" /> <label class="input-inline" for="present27">Present</label><br />
+<span style="margin-right: 10px;">Chest Pain</span> <input class="filled-in" id="past28" name="issue28[]" type="checkbox" value="Past" /> <label class="input-inline" for="past28">Past</label> <input class="filled-in" id="present28" name="issue28[]" type="checkbox" value="Present" /> <label class="input-inline" for="present28">Present</label><br />
+<span style="margin-right: 10px;">Angina</span> <input class="filled-in" id="past29" name="issue29[]" type="checkbox" value="Past" /> <label class="input-inline" for="past29">Past</label> <input class="filled-in" id="present29" name="issue29[]" type="checkbox" value="Present" /> <label class="input-inline" for="present29">Present</label><br />
+<span style="margin-right: 10px;">Hepatitis</span> <input class="filled-in" id="past30" name="issue30[]" type="checkbox" value="Past" /> <label class="input-inline" for="past30">Past</label> <input class="filled-in" id="present30" name="issue30[]" type="checkbox" value="Present" /> <label class="input-inline" for="present30">Present</label><br />
+<span style="margin-right: 10px;">Liver/Gall Bladder Disorder</span> <input class="filled-in" id="past31" name="issue31[]" type="checkbox" value="Past" /> <label class="input-inline" for="past31">Past</label> <input class="filled-in" id="present31" name="issue31[]" type="checkbox" value="Present" /> <label class="input-inline" for="present31">Present</label><br />
+<span style="margin-right: 10px;">Abdominal Pain</span> <input class="filled-in" id="past32" name="issue32[]" type="checkbox" value="Past" /> <label class="input-inline" for="past32">Past</label> <input class="filled-in" id="present32" name="issue32[]" type="checkbox" value="Present" /> <label class="input-inline" for="present32">Present</label><br />
+<span style="margin-right: 10px;">Ulcer</span> <input class="filled-in" id="past33" name="issue33[]" type="checkbox" value="Past" /> <label class="input-inline" for="past33">Past</label> <input class="filled-in" id="present33" name="issue33[]" type="checkbox" value="Present" /> <label class="input-inline" for="present33">Present</label><br />
+<span style="margin-right: 10px;">Kidney Stones</span> <input class="filled-in" id="past34" name="issue34[]" type="checkbox" value="Past" /> <label class="input-inline" for="past34">Past</label> <input class="filled-in" id="present34" name="issue34[]" type="checkbox" value="Present" /> <label class="input-inline" for="present34">Present</label><br />
+<span style="margin-right: 10px;">Kidney Disorders</span> <input class="filled-in" id="past35" name="issue35[]" type="checkbox" value="Past" /> <label class="input-inline" for="past35">Past</label> <input class="filled-in" id="present35" name="issue35[]" type="checkbox" value="Present" /> <label class="input-inline" for="present35">Present</label><br />
+<span style="margin-right: 10px;">Bladder Infection</span> <input class="filled-in" id="past36" name="issue36[]" type="checkbox" value="Past" /> <label class="input-inline" for="past6">Past</label> <input class="filled-in" id="present36" name="issue36[]" type="checkbox" value="Present" /> <label class="input-inline" for="present36">Present</label><br />
+<span style="margin-right: 10px;">Painful Urination</span> <input class="filled-in" id="past37" name="issue37[]" type="checkbox" value="Past" /> <label class="input-inline" for="past37">Past</label> <input class="filled-in" id="present37" name="issue37[]" type="checkbox" value="Present" /> <label class="input-inline" for="present37">Present</label><br />
+<span style="margin-right: 10px;">Loss of Bladder Control</span> <input class="filled-in" id="past38" name="issue38[]" type="checkbox" value="Past" /> <label class="input-inline" for="past38">Past</label> <input class="filled-in" id="present38" name="issue38[]" type="checkbox" value="Present" /> <label class="input-inline" for="present38">Present</label></div>
+
+<div class="col s12 l4"><span style="margin-right: 10px;">Allergies</span> <input class="filled-in" id="past39" name="issue39[]" type="checkbox" value="Past" /> <label class="input-inline" for="past39">Past</label> <input class="filled-in" id="present39" name="issue39[]" type="checkbox" value="Present" /> <label class="input-inline" for="present39">Present</label><br />
+<span style="margin-right: 10px;">Chronic Sinusitis</span> <input class="filled-in" id="past40" name="issue40[]" type="checkbox" value="Past" /> <label class="input-inline" for="past40">Past</label> <input class="filled-in" id="present40" name="issue40[]" type="checkbox" value="Present" /> <label class="input-inline" for="present40">Present</label><br />
+<span style="margin-right: 10px;">Dermatitis/Eczema/Rash</span> <input class="filled-in" id="past41" name="issue41[]" type="checkbox" value="Past" /> <label class="input-inline" for="past41">Past</label> <input class="filled-in" id="present41" name="issue41[]" type="checkbox" value="Present" /> <label class="input-inline" for="present41">Present</label><br />
+<span style="margin-right: 10px;">Excessive Thirst</span> <input class="filled-in" id="past42" name="issue42[]" type="checkbox" value="Past" /> <label class="input-inline" for="past42">Past</label> <input class="filled-in" id="present42" name="issue42[]" type="checkbox" value="Present" /> <label class="input-inline" for="present42">Present</label><br />
+<span style="margin-right: 10px;">Frequent Urination</span> <input class="filled-in" id="past43" name="issue43[]" type="checkbox" value="Past" /> <label class="input-inline" for="past43">Past</label> <input class="filled-in" id="present43" name="issue43[]" type="checkbox" value="Present" /> <label class="input-inline" for="present43">Present</label><br />
+<span style="margin-right: 10px;">Abnormal Weight Gain/Loss</span> <input class="filled-in" id="past44" name="issue44[]" type="checkbox" value="Past" /> <label class="input-inline" for="past44">Past</label> <input class="filled-in" id="present44" name="issue44[]" type="checkbox" value="Present" /> <label class="input-inline" for="present44">Present</label><br />
+<span style="margin-right: 10px;">Loss of Appetite</span> <input class="filled-in" id="past45" name="issue45[]" type="checkbox" value="Past" /> <label class="input-inline" for="past45">Past</label> <input class="filled-in" id="present45" name="issue45[]" type="checkbox" value="Present" /> <label class="input-inline" for="present45">Present</label><br />
+<span style="margin-right: 10px;">General Fatigue</span> <input class="filled-in" id="past46" name="issue46[]" type="checkbox" value="Past" /> <label class="input-inline" for="past46">Past</label> <input class="filled-in" id="present46" name="issue46[]" type="checkbox" value="Present" /> <label class="input-inline" for="present46">Present</label><br />
+<span style="margin-right: 10px;">Smoking/Tobacco Use</span> <input class="filled-in" id="past47" name="issue47[]" type="checkbox" value="Past" /> <label class="input-inline" for="past47">Past</label> <input class="filled-in" id="present47" name="issue47[]" type="checkbox" value="Present" /> <label class="input-inline" for="present47">Present</label><br />
+<span style="margin-right: 10px;">Drug/Alcohol Dependence</span> <input class="filled-in" id="past48" name="issue48[]" type="checkbox" value="Past" /> <label class="input-inline" for="past48">Past</label> <input class="filled-in" id="present48" name="issue48[]" type="checkbox" value="Present" /> <label class="input-inline" for="present48">Present</label><br />
+<span style="margin-right: 10px;">Depression</span> <input class="filled-in" id="past49" name="issue49[]" type="checkbox" value="Past" /> <label class="input-inline" for="past49">Past</label> <input class="filled-in" id="present49" name="issue49[]" type="checkbox" value="Present" /> <label class="input-inline" for="present49">Present</label><br />
+<span style="margin-right: 10px;">HIV/AIDS</span> <input class="filled-in" id="past50" name="issue50[]" type="checkbox" value="Past" /> <label class="input-inline" for="past50">Past</label> <input class="filled-in" id="present50" name="issue50[]" type="checkbox" value="Present" /> <label class="input-inline" for="present50">Present</label><br />
+<span style="margin-right: 10px;">Diabetes</span> <input class="filled-in" id="past51" name="issue51[]" type="checkbox" value="Past" /> <label class="input-inline" for="past51">Past</label> <input class="filled-in" id="present51" name="issue51[]" type="checkbox" value="Present" /> <label class="input-inline" for="present51">Present</label><br />
+<span style="margin-right: 10px;">Asthma</span> <input class="filled-in" id="past52" name="issue52[]" type="checkbox" value="Past" /> <label class="input-inline" for="past52">Past</label> <input class="filled-in" id="present52" name="issue52[]" type="checkbox" value="Present" /> <label class="input-inline" for="present52">Present</label><br />
+<span style="margin-right: 10px;">Birth Control Pills</span> <input class="filled-in" id="past53" name="issue53[]" type="checkbox" value="Past" /> <label class="input-inline" for="past53">Past</label> <input class="filled-in" id="present53" name="issue53[]" type="checkbox" value="Present" /> <label class="input-inline" for="present53">Present</label><br />
+<span style="margin-right: 10px;">Hormonal Replacement</span> <input class="filled-in" id="past54" name="issue54[]" type="checkbox" value="Past" /> <label class="input-inline" for="past54">Past</label> <input class="filled-in" id="present54" name="issue54[]" type="checkbox" value="Present" /> <label class="input-inline" for="present54">Present</label><br />
+<span style="margin-right: 10px;">Pregnancy</span> <input class="filled-in" id="past55" name="issue55[]" type="checkbox" value="Past" /> <label class="input-inline" for="past55">Past</label> <input class="filled-in" id="present55" name="issue55[]" type="checkbox" value="Present" /> <label class="input-inline" for="present55">Present</label><br />
+<span style="margin-right: 10px;">Prostate Problem</span> <input class="filled-in" id="past56" name="issue56[]" type="checkbox" value="Past" /> <label class="input-inline" for="past56">Past</label> <input class="filled-in" id="present56" name="issue56[]" type="checkbox" value="Present" /> <label class="input-inline" for="present56">Present</label><br />
+<span style="margin-right: 10px;">Other</span> <input class="filled-in" id="past57" name="issue57[]" type="checkbox" value="Past" /> <label class="input-inline" for="past57">Past</label> <input class="filled-in" id="other9" name="issue57[]" type="checkbox" value="Present" /> <label class="input-inline" for="other9">Present</label>
+
+<div class="input-field col s12"><input id="other10" name="otherexp5" style="margin-top: 5px;" type="text" /></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12 input-field"><input id="currentlytaking" name="currentlytaking" type="text" /> <label for="currentlytaking">20. List all prescription &amp; over the counter medications you are currently taking</label></div>
+</div>
+
+<div class="row">
+<div class="col s12 input-field"><input id="allergicto" name="allergicto" type="text" /> <label for="allergicto">21. List any medications you are allergic to</label></div>
+</div>
+
+<div class="row">
+<div class="col s12 input-field"><input id="surgicalproc" name="surgicalproc" type="text" /> <label for="surgicalproc">22. List any surgical procedures and/or hospitalizations you have had</label></div>
+</div>
+
+<div class="row">
+<div class="col s12 input-field"><input id="pasttrauma" name="pasttrauma" type="text" /> <label for="pasttrauma">23. List any significant past trauma you have had</label></div>
+</div>
+
+<p>24. What activities do you do at work?</p>
+
+<div class="row">
+<div class="col s12"><span style="margin-right: 10px;">Sit</span> <input class="with-gap" id="sit1" name="sit" type="radio" value="Most of the day" /> <label class="input-inline" for="sit1">Most of the day</label> <input class="with-gap" id="sit2" name="sit" type="radio" value="Half of the day" /> <label class="input-inline" for="sit2">Half of the day</label> <input class="with-gap" id="sit3" name="sit" type="radio" value="A little of the day" /> <label class="input-inline" for="sit3">A little of the day</label> <input class="with-gap" id="sit4" name="sit" type="radio" value="Never" /> <label class="input-inline" for="sit4">Never</label><br />
+<span style="margin-right: 10px;">Stand</span> <input class="with-gap" id="stand1" name="stand" type="radio" value="Most of the day" /> <label class="input-inline" for="stand1">Most of the day</label> <input class="with-gap" id="stand2" name="stand" type="radio" value="Half of the day" /> <label class="input-inline" for="stand2">Half of the day</label> <input class="with-gap" id="stand3" name="stand" type="radio" value="A little of the day" /> <label class="input-inline" for="stand3">A little of the day</label> <input class="with-gap" id="stand4" name="stand" type="radio" value="Never" /> <label class="input-inline" for="stand4">Never</label><br />
+<span style="margin-right: 10px;">Computer work</span> <input class="with-gap" id="computerwork1" name="computerwork" type="radio" value="Most of the day" /> <label class="input-inline" for="computerwork1">Most of the day</label> <input class="with-gap" id="computerwork2" name="computerwork" type="radio" value="Half of the day" /> <label class="input-inline" for="computerwork2">Half of the day</label> <input class="with-gap" id="computerwork3" name="computerwork" type="radio" value="A little of the day" /> <label class="input-inline" for="computerwork3">A little of the day</label> <input class="with-gap" id="computerwork4" name="computerwork" type="radio" value="Never" /> <label class="input-inline" for="computerwork4">Never</label><br />
+<span style="margin-right: 10px;">On the phone</span> <input class="with-gap" id="onphone1" name="onphone" type="radio" value="Most of the day" /> <label class="input-inline" for="onphone1">Most of the day</label> <input class="with-gap" id="onphone2" name="onphone" type="radio" value="Half of the day" /> <label class="input-inline" for="onphone2">Half of the day</label> <input class="with-gap" id="onphone3" name="onphone" type="radio" value="A little of the day" /> <label class="input-inline" for="onphone3">A little of the day</label> <input class="with-gap" id="onphone4" name="onphone" type="radio" value="Never" /> <label class="input-inline" for="onphone4">Never</label><br />
+<span style="margin-right: 10px;">Other</span>
+
+<div class="input-field inline"><input name="otherexp6" type="text" /></div>
+<input class="with-gap" id="otheract1" name="otheract" type="radio" value="Most of the day" /> <label class="input-inline" for="otheract1">Most of the day</label> <input class="with-gap" id="otheract2" name="otheract" type="radio" value="Half of the day" /> <label class="input-inline" for="otheract2">Half of the day</label> <input class="with-gap" id="otheract3" name="otheract" type="radio" value="A little of the day" /> <label class="input-inline" for="otheract3">A little of the day</label> <input class="with-gap" id="otheract4" name="otheract" type="radio" value="Never" /> <label class="input-inline" for="otheract4">Never</label></div>
+</div>
+
+<p>26. What concerns you the most about your problem?</p>
+
+<div class="row">
+<div class="col s12"><input class="filled-in" id="concern1" name="concern[]" type="checkbox" value="Serious" /> <label class="input-inline" for="concern1">It could be serious</label> <input class="filled-in" id="concern2" name="concern[]" type="checkbox" value="Not going away" /> <label class="input-inline" for="concern2">It isn&#39;t going away</label> <input class="filled-in" id="concern3" name="concern[]" type="checkbox" value="Getting worse" /> <label class="input-inline" for="concern3">It is getting worse</label> <input class="filled-in" id="concern4" name="concern[]" type="checkbox" value="Affecting social" /> <label class="input-inline" for="concern4">It is affecting social activities</label> <input class="filled-in" id="concern5" name="concern[]" type="checkbox" /> <label class="input-inline" for="concern5">It is affecting work</label> <input class="filled-in" id="concern6" name="concern[]" type="checkbox" /> <label class="input-inline" for="concern6">It is affecting sleep</label> <input class="filled-in" id="concern7" name="concern[]" type="checkbox" /> <label class="input-inline" for="concern7">It is affecting relationships</label> <input class="filled-in" id="concern8" name="concern[]" type="checkbox" /> <label class="input-inline" for="concern8">It is affecting mental outlook</label></div>
+</div>
+
+<p>27. How much has the problem interfered with your work?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="interfered1" name="interfered" type="radio" value="Not at all" /> <label class="input-inline" for="interfered1">Not at all</label> <input class="with-gap" id="interfered2" name="interfered" type="radio" value="Little bit" /> <label class="input-inline" for="interfered2">A little bit</label> <input class="with-gap" id="interfered3" name="interfered" type="radio" value="Moderately" /> <label class="input-inline" for="interfered3">Moderately</label> <input class="with-gap" id="interfered4" name="interfered" type="radio" value="Quite a bit" /> <label class="input-inline" for="interfered4">Quite a bit</label> <input class="with-gap" id="interfered5" name="interfered" type="radio" value="Extremely" /> <label class="input-inline" for="interfered5">Extremely</label></div>
+</div>
+
+<div class="row">
+<div class="col s12"><span style="margin-right: 10px;">28. Do you suffer from neck pain with pain in your shoulders, arms, or hands?</span> <input class="with-gap" id="suffer1" name="suffer" type="radio" value="NO" /> <label class="input-inline" for="suffer1">NO</label> <input class="with-gap" id="suffer2" name="suffer" type="radio" value="YES" /> <label class="input-inline" for="suffer2">YES</label></div>
+</div>
+
+<div class="row">
+<div class="col s12"><span style="margin-right: 10px;">29. Do you have a weakness, numbness, tingling, or burning in your shoulders, arms, or hands?</span> <input class="with-gap" id="weaknessm1" name="weaknessm" type="radio" value="NO" /> <label class="input-inline" for="weaknessm1">NO</label> <input class="with-gap" id="weaknessm2" name="weaknessm" type="radio" value="YES" /> <label class="input-inline" for="weaknessm2">YES</label></div>
+</div>
+
+<div class="row">
+<div class="col s12"><span style="margin-right: 10px;">30. Do your arms or hands fall asleep regularly?</span> <input class="with-gap" id="handsleep1" name="handsleep" type="radio" value="NO" /> <label class="input-inline" for="handsleep1">NO</label> <input class="with-gap" id="handsleep2" name="handsleep" type="radio" value="YES" /> <label class="input-inline" for="handsleep2">YES</label></div>
+</div>
+
+<div class="row">
+<div class="col s12"><span style="margin-right: 10px;">31. Do you have reduced feeling (sensation) or swelling in your arms or hands?</span> <input class="with-gap" id="reducedfeeling1" name="reducedfeeling" type="radio" value="NO" /> <label class="input-inline" for="reducedfeeling1">NO</label> <input class="with-gap" id="reducedfeeling2" name="reducedfeeling" type="radio" value="YES" /> <label class="input-inline" for="reducedfeeling2">YES</label></div>
+</div>
+
+<div class="row">
+<div class="col s12"><span style="margin-right: 10px;">32. Do you suffer from a loss of handgrip strength?</span> <input class="with-gap" id="sufferhand1" name="sufferhand" type="radio" value="NO" /> <label class="input-inline" for="sufferhand1">NO</label> <input class="with-gap" id="sufferhand2" name="sufferhand" type="radio" value="YES" /> <label class="input-inline" for="sufferhand2">YES</label></div>
+</div>
+
+<div class="row">
+<div class="col s12"><span style="margin-right: 10px;">33. Do you suffer from back pain with pain in your buttocks, legs, or feet?</span> <input class="with-gap" id="sufferback1" name="sufferback" type="radio" value="NO" /> <label class="input-inline" for="sufferback1">NO</label> <input class="with-gap" id="sufferback2" name="sufferback" type="radio" value="YES" /> <label class="input-inline" for="sufferback2">YES</label></div>
+</div>
+
+<div class="row">
+<div class="col s12"><span style="margin-right: 10px;">34. Do you have weakness, numbness, or burning in your buttocks, legs, or feet?</span> <input class="with-gap" id="weaknesslegs1" name="weaknesslegs" type="radio" value="NO" /> <label class="input-inline" for="weaknesslegs1">NO</label> <input class="with-gap" id="weaknesslegs2" name="weaknesslegs" type="radio" value="YES" /> <label class="input-inline" for="weaknesslegs2">YES</label></div>
+</div>
+
+<div class="row">
+<div class="col s12"><span style="margin-right: 10px;">35. Do your legs or feet fall asleep regularly?</span> <input class="with-gap" id="legsleep1" name="legsleep" type="radio" value="NO" /> <label class="input-inline" for="legsleep1">NO</label> <input class="with-gap" id="legsleep2" name="legsleep" type="radio" value="YES" /> <label class="input-inline" for="legsleep2">YES</label></div>
+</div>
+
+<div class="row">
+<div class="col s12"><span style="margin-right: 10px;">36. Do you have reduced feeling (sensation) or swelling in your legs or foot?</span> <input class="with-gap" id="reducedlegs1" name="reducedlegs" type="radio" value="NO" /> <label class="input-inline" for="reducedlegs1">NO</label> <input class="with-gap" id="reducedlegs2" name="reducedlegs" type="radio" value="YES" /> <label class="input-inline" for="reducedlegs2">YES</label></div>
+</div>
+
+<div class="row">
+<div class="col s12"><span style="margin-right: 10px;">37. Do you suffer from cold hands or feet?</span> <input class="with-gap" id="coldhands1" name="coldhands" type="radio" value="NO" /> <label class="input-inline" for="coldhands1">NO</label> <input class="with-gap" id="coldhands2" name="coldhands" type="radio" value="YES" /> <label class="input-inline" for="coldhands2">YES</label></div>
+</div>
+
+<div class="row">
+<div class="col s12"><span style="margin-right: 10px;">38. Have you tried any Physical Therapy before?</span> <input class="with-gap" id="triedbefore1" name="triedbefore" type="radio" value="NO" /> <label class="input-inline" for="triedbefore1">NO</label> <input class="with-gap" id="triedbefore2" name="triedbefore" type="radio" value="YES" /> <label class="input-inline" for="triedbefore2">YES</label>
+
+<div class="input-field"><input id="explanation1" name="explanation1" type="text" /> <label for="explanation1">If yes, when? For how long? What kind?</label></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12"><span style="margin-right: 10px;">39. Have you tried any Chiropractic treatments before?</span> <input class="with-gap" id="triedbeforechiro1" name="triedbeforechiro" type="radio" value="NO" /> <label class="input-inline" for="triedbeforechiro1">NO</label> <input class="with-gap" id="triedbeforechiro2" name="triedbeforechiro" type="radio" value="YES" /> <label class="input-inline" for="triedbeforechiro2">YES</label>
+
+<div class="input-field"><input id="explanation2" name="explanation2" type="text" /> <label for="explanation2">If yes, when? For how long? What kind?</label></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12"><span style="margin-right: 10px;">40. Have you had an MRI?</span> <input class="with-gap" id="mribefore1" name="mribefore" type="radio" value="NO" /> <label class="input-inline" for="mribefore1">NO</label> <input class="with-gap" id="mribefore2" name="mribefore" type="radio" value="YES" /> <label class="input-inline" for="mribefore2">YES</label>
+
+<div class="input-field"><input id="explanation3" name="explanation3" type="text" /> <label for="explanation3">If yes, when? Who ordered it? What was it ordered for?</label></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12"><span style="margin-right: 10px;">41. Have you had X-rays?</span> <input class="with-gap" id="xraysbefore1" name="xraysbefore" type="radio" value="NO" /> <label class="input-inline" for="xraysbefore1">NO</label> <input class="with-gap" id="xraysbefore2" name="xraysbefore" type="radio" value="YES" /> <label class="input-inline" for="xraysbefore2">YES</label>
+
+<div class="input-field"><input id="explanation4" name="explanation4" type="text" /> <label for="explanation4">If yes, when? Who ordered it? What was it ordered for?</label></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12"><span style="margin-right: 10px;">42. Have you used any splint or braces or other prescribed treatments by an M.D.?</span> <input class="with-gap" id="bracesbefore1" name="bracesbefore" type="radio" value="NO" /> <label class="input-inline" for="bracesbefore1">NO</label> <input class="with-gap" id="bracesbefore2" name="bracesbefore" type="radio" value="YES" /> <label class="input-inline" for="bracesbefore2">YES</label>
+
+<div class="input-field"><input id="explanation5" name="explanation5" type="text" /> <label for="explanation5">If yes, when? What kind? Who ordered it?</label></div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s12">
+<div class="input-field"><input id="anythingexpected" name="anythingexpected" type="text" /> <label for="anythingexpected">43. Is there anything else pertinent to your visit today?</label></div>
+</div>
+</div>
+
+<h3>Weight Loss</h3>
+
+<p>44. Check ALL areas of treatment that interest you:</p>
+
+<div class="row">
+<div class="col s12"><input class="filled-in" id="weight11" name="weight1[]" type="checkbox" value="Weight Loss" /> <label class="input-inline" for="weight11">Weight Loss</label> <input class="filled-in" id="weight12" name="weight1[]" type="checkbox" value="Cleansing and Detoxification" /> <label class="input-inline" for="weight12">Cleansing and Detoxification</label> <input class="filled-in" id="weight13" name="weight1[]" type="checkbox" value="General Wellness" /> <label class="input-inline" for="weight13">General Wellness</label> <input class="filled-in" id="weight14" name="weight1[]" type="checkbox" value="Body Wraps" /> <label class="input-inline" for="weight14">Body Wraps</label> <input class="filled-in" id="weight15" name="weight1[]" type="checkbox" value="More Energy" /> <label class="input-inline" for="weight15">More Energy</label> <input class="filled-in" id="weight16" name="weight1[]" type="checkbox" value="Stress Reduction" /> <label class="input-inline" for="weight16">Stress Reduction</label> <input class="filled-in" id="weight17" name="weight1[]" type="checkbox" value="Affecting relationships" /> <label class="input-inline" for="weight17">It is affecting relationships</label> <input class="filled-in" id="other13" name="weight1[]" type="checkbox" value="Present" /> <label class="input-inline" for="other13">Other:</label>
+
+<div class="input-field col s12"><input id="other14" name="weight1other" style="margin-top: 5px;" type="text" /></div>
+</div>
+</div>
+
+<p>45. Did you know that all treatments above are 100% safe?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight21" name="weight2" type="radio" value="Yes" /> <label class="input-inline" for="weight21">Yes</label> <input class="with-gap" id="weight22" name="weight2" type="radio" value="No" /> <label class="input-inline" for="weight22">No</label></div>
+</div>
+
+<p>46. Have you ever used any of the above treatments before?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight31" name="weight3" type="radio" value="Yes" /> <label class="input-inline" for="weight31">Yes</label> <input class="with-gap" id="weight32" name="weight3" type="radio" value="No" /> <label class="input-inline" for="weight32">No</label></div>
+</div>
+
+<p>47. What do you consider to be your ideal weight?</p>
+
+<div class="row">
+<div class="col s12"><input name="weight4" type="text" /></div>
+</div>
+
+<p>48. How much weight do you want to lose?</p>
+
+<div class="row">
+<div class="col s12"><input name="weight5" type="text" /></div>
+</div>
+
+<p>49. When was the last time you were at your goal weight?</p>
+
+<div class="row">
+<div class="col s12"><input name="weight6" type="text" /></div>
+</div>
+
+<p>50. How many times a year do you diet?</p>
+
+<div class="row">
+<div class="col s12"><input name="weight7" type="text" /></div>
+</div>
+
+<p>51. What is stopping you from losing weight on your own?</p>
+
+<div class="row">
+<div class="col s12"><input name="weight8" type="text" /></div>
+</div>
+
+<p>52. What have you tried in the past that has failed?</p>
+
+<div class="row">
+<div class="col s12"><input name="weight9" type="text" /></div>
+</div>
+
+<p>53. Does your weight problem make you physically uncomfortable?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight101" name="weight10" type="radio" value="Yes" /> <label class="input-inline" for="weight101">Yes</label> <input class="with-gap" id="weight102" name="weight10" type="radio" value="No" /> <label class="input-inline" for="weight102">No</label>
+
+<div class="input-field inline" style="width:400px;"><input id="weight103" name="weight10-d" type="text" /> <label for="weight103">Please describe</label></div>
+</div>
+</div>
+
+<p>54. Does your weight problem cause physical pain?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight111" name="weight11" type="radio" value="Yes" /> <label class="input-inline" for="weight111">Yes</label> <input class="with-gap" id="weight112" name="weight11" type="radio" value="No" /> <label class="input-inline" for="weight112">No</label>
+
+<div class="input-field inline" style="width:400px;"><input id="weight113" name="weight11-d" type="text" /> <label for="weight113">Please describe</label></div>
+</div>
+</div>
+
+<p>55. Are you embarrassed by your excessive weight?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight121" name="weight12" type="radio" value="Yes" /> <label class="input-inline" for="weight121">Yes</label> <input class="with-gap" id="weight122" name="weight12" type="radio" value="No" /> <label class="input-inline" for="weight122">No</label>
+
+<div class="input-field inline" style="width:400px;"><input id="weight123" name="weight12-d" type="text" /> <label for="weight123">Please describe</label></div>
+</div>
+</div>
+
+<p>56. Does being overweight and unhealthy limit your activities?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight131" name="weight13" type="radio" value="Yes" /> <label class="input-inline" for="weight131">Yes</label> <input class="with-gap" id="weight132" name="weight13" type="radio" value="No" /> <label class="input-inline" for="weight132">No</label></div>
+</div>
+
+<p>57. Do you binge eat</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight141" name="weight14" type="radio" value="Yes" /> <label class="input-inline" for="weight141">Yes</label> <input class="with-gap" id="weight142" name="weight14" type="radio" value="No" /> <label class="input-inline" for="weight142">No</label></div>
+</div>
+
+<p>58. Do you suffer from uncontrollable cravings?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight151" name="weight15" type="radio" value="Yes" /> <label class="input-inline" for="weight151">Yes</label> <input class="with-gap" id="weight152" name="weight15" type="radio" value="No" /> <label class="input-inline" for="weight152">No</label></div>
+</div>
+
+<p>59. Do you feel that food controls you?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight161" name="weight16" type="radio" value="Yes" /> <label class="input-inline" for="weight161">Yes</label> <input class="with-gap" id="weight162" name="weight16" type="radio" value="No" /> <label class="input-inline" for="weight162">No</label></div>
+</div>
+
+<p>60. Do you eat because of your emotions?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight171" name="weight17" type="radio" value="Yes" /> <label class="input-inline" for="weight171">Yes</label> <input class="with-gap" id="weight172" name="weight17" type="radio" value="No" /> <label class="input-inline" for="weight172">No</label></div>
+</div>
+
+<p>61. Do you eat between meals?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight181" name="weight18" type="radio" value="Yes" /> <label class="input-inline" for="weight181">Yes</label> <input class="with-gap" id="weight182" name="weight18" type="radio" value="No" /> <label class="input-inline" for="weight182">No</label></div>
+</div>
+
+<p>62. What do you choose to eat between meals?</p>
+
+<div class="row">
+<div class="col s12"><input name="weight19" type="text" /></div>
+</div>
+
+<p>63. Do you feel that your eating behaviors are normal?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight201" name="weight20" type="radio" value="Yes" /> <label class="input-inline" for="weight201">Yes</label> <input class="with-gap" id="weight202" name="weight20" type="radio" value="No" /> <label class="input-inline" for="weight202">No</label></div>
+</div>
+
+<p>64. Briefly describe your daily eating behaviors:</p>
+
+<div class="row">
+<div class="col s12"><input name="weight21" type="text" /></div>
+</div>
+
+<p>65. Do you feel tired, run-down, or out of energy?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight221" name="weight22" type="radio" value="Yes" /> <label class="input-inline" for="weight221">Yes</label> <input class="with-gap" id="weight222" name="weight22" type="radio" value="No" /> <label class="input-inline" for="weight222">No</label></div>
+</div>
+
+<p>66. Is successful weight loss a top priority?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight231" name="weight23" type="radio" value="Yes" /> <label class="input-inline" for="weight231">Yes</label> <input class="with-gap" id="weight232" name="weight23" type="radio" value="No" /> <label class="input-inline" for="weight232">No</label>
+
+<div class="input-field inline" style="width:400px;"><input id="weight233" name="weight23-d" type="text" /> <label for="weight233">Please explain</label></div>
+</div>
+</div>
+
+<p>67. How fast do you want to be slim, trim, and fit?</p>
+
+<div class="row">
+<div class="col s12"><input name="weight24" type="text" /></div>
+</div>
+
+<p>68. What&#39;s more important to you: fast or permanent?</p>
+
+<div class="row">
+<div class="col s12"><input name="weight25" type="text" /></div>
+</div>
+
+<p>69. Does your family support your weight loss efforts?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight261" name="weight26" type="radio" value="Yes" /> <label class="input-inline" for="weight261">Yes</label> <input class="with-gap" id="weight262" name="weight26" type="radio" value="No" /> <label class="input-inline" for="weight262">No</label></div>
+</div>
+
+<p>70. Is your family excited that you&#39;re working with us?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight271" name="weight27" type="radio" value="Yes" /> <label class="input-inline" for="weight271">Yes</label> <input class="with-gap" id="weight272" name="weight27" type="radio" value="No" /> <label class="input-inline" for="weight272">No</label></div>
+</div>
+
+<p>71. Can you remember being at your ideal weight?</p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight281" name="weight28" type="radio" value="Weight Loss" /> <label class="input-inline" for="weight281">Yes</label> <input class="with-gap" id="weight282" name="weight28" type="radio" value="No" /> <label class="input-inline" for="weight282">No</label></div>
+</div>
+
+<p>72. What do you remember most about it?</p>
+
+<div class="row">
+<div class="col s12"><input name="weight29" type="text" /></div>
+</div>
+<p><b>Check the following conditions you would like help with or more information on:</b></p>
+
+<div class="row">
+<div class="col s12"><input class="filled-in" id="weight301" name="weight30[]" type="checkbox" value="Cleansing" /> <label class="input-inline" for="weight301">Cleansing</label> <input class="filled-in" id="weight302" name="weight30[]" type="checkbox" value="Hormone balance for Women" /> <label class="input-inline" for="weight302">Hormone balance for Women</label> <input class="filled-in" id="weight303" name="weight30[]" type="checkbox" value="Neuropathy" /> <label class="input-inline" for="weight303">Neuropathy</label> <input class="filled-in" id="weight304" name="weight30[]" type="checkbox" value="Stress Relief" /> <label class="input-inline" for="weight304">Stress Relief</label> <input class="filled-in" id="weight305" name="weight30[]" type="checkbox" value="Cellulite" /> <label class="input-inline" for="weight305">Cellulite</label> <input class="filled-in" id="weight306" name="weight30[]" type="checkbox" value="Immune Boosting" /> <label class="input-inline" for="weight306">Immune Boosting</label> <input class="filled-in" id="weight307" name="weight30[]" type="checkbox" value="Pain Relief" /> <label class="input-inline" for="weight307">Pain Relief</label> <input class="filled-in" id="weight308" name="weight30[]" type="checkbox" value="Thyroid" /> <label class="input-inline" for="weight308">Thyroid</label> <input class="filled-in" id="weight309" name="weight30[]" type="checkbox" value="Fitness" /> <label class="input-inline" for="weight309">Fitness</label> <input class="filled-in" id="weight3010" name="weight30[]" type="checkbox" value="Insomnia" /> <label class="input-inline" for="weight3010">Insomnia</label> <input class="filled-in" id="weight3011" name="weight30[]" type="checkbox" value="Quitting Smoking" /> <label class="input-inline" for="weight3011">Quitting Smoking</label> <input class="filled-in" id="weight3012" name="weight30[]" type="checkbox" value="Weight Loss" /> <label class="input-inline" for="weight3012">Weight Loss</label> <input class="filled-in" id="weight3013" name="weight30[]" type="checkbox" value="Hormone Balance for Men" /> <label class="input-inline" for="weight3013">Hormone Balance for Men</label> <input class="filled-in" id="weight3014" name="weight30[]" type="checkbox" value="Memory and Mood" /> <label class="input-inline" for="weight3014">Memory and Mood</label> <input class="filled-in" id="weight3015" name="weight30[]" type="checkbox" value="Skincare" /> <label class="input-inline" for="weight3015">Skincare</label> <input class="filled-in" id="weight3016" name="weight30[]" type="checkbox" value="Wellness" /> <label class="input-inline" for="weight3016">Wellness</label></div>
+</div>
+
+<p><b>What is the most important element in deciding to use our services?</b></p>
+
+<div class="row">
+<div class="col s12"><input class="with-gap" id="weight311" name="weight31" type="radio" value="Weight Loss" /> <label class="input-inline" for="weight311"><b>Effectiveness: </b><i>&quot;My results are my top priority&quot;</i></label> <input class="with-gap" id="weight312" name="weight31" type="radio" value="Time" /> <label class="input-inline" for="weight312"><b>Time: </b><i>&quot;I want results quickly&quot;</i></label> <input class="with-gap" id="weight313" name="weight31" type="radio" value="Servuce" /> <label class="input-inline" for="weight313"><b>Service: </b><i>&quot;I need extra support along the way&quot;</i></label> <input class="with-gap" id="weight314" name="weight31" type="radio" value="Affordability" /> <label class="input-inline" for="weight314"><b>Affordability: </b><i>&quot;I need this to be affordable&quot;</i></label></div>
+</div>
+<!-- yousaf job start -->
+
+<p><b>INSURANCE INFORMATION</b></p>
+<div class="row">
+	<div class="input-field col s12">
+		<input id="ahn" name="ahn" type="text"  /> <label for="ahn">Name of person responsible for this account</label>
+	</div>
+</div>		
+<div class="row">
+	<div class="input-field col s8">
+		<input id="rtp" name="rtp" type="text"  /> <label for="rtp">Relationship to patient (if other than self)</label>
+	</div>
+	<div class="input-field col s4">
+		<input id="nsp" name="nsp" type="text"  /> <label for="nsp">Phone #</label>
+	</div>
+</div>
+<div class="row">
+	<div class="input-field col s8">
+		<input id="nph" name="nph" type="text"  /> <label for="rtp">Name of Policy Holder</label>
+	</div>
+	<div class="input-field col s4">
+		<input class="datepicker" id="dobph" name="dobph" type="date"  /> <label for="dobph">Date of Birth of Policy Holder (mm/dd/yyyy)</label>
+	</div>
+</div>
+<div class="row">
+	<div class="col s4">
+		<p>Do you have a Secondary Insurance?</p>
+		<input class="with-gap" id="hsi1" name="hsi" type="radio" value="Yes"  /> <label class="input-inline" for="hsi1">Yes</label> 
+		<input class="with-gap" id="hsi2" name="hsi" type="radio" value="No"  /> <label for="hsi2">No</label>
+	</div>
+	<div class="input-field col s8">
+		<input id="noc" name="noc" type="text"  /> <label for="noc">Name of Carrier</label>
+	</div>
+</div>
+<div class="row">
+	<div class="col s12">
+		<p>Are you enrolled in a</p>
+		<input class="with-gap" id="ei1" name="ei1" type="radio" value="hsa"  /> <label class="input-inline" for="ei1">(HSA) Health Savings Account</label> 
+		<input class="with-gap" id="ei2" name="ei1" type="radio" value="fsa"  /> <label class="input-inline" for="ei2">(FSA) Flex Spending Account</label>
+		<input class="with-gap" id="ei3" name="ei1" type="radio" value="hra"  /> <label for="ei3">(HRA) Health Reimbursement Account</label>
+	</div>
+</div>
+<p><b>Credit/Debit Card Information: (please print legibly)</b></p>
+<div class="row">
+	<div class="input-field col s4">
+		<input id="noch" name="noch" type="text"  /> <label for="noch">Name of Card Holder</label>
+	</div>
+	<div class="input-field col s4">
+		<input id="ct" name="ct" type="text"  /> <label for="ct">Card Type</label>
+	</div>
+	<div class="input-field col s4">
+		<input class="datepicker" id="ced" name="ced" type="date"  /> <label for="ced">Exp. Date</label>
+	</div>
+</div>
+<div class="row">
+	<div class="input-field col s8">
+		<input id="ccn" name="ccn" type="text"  /> <label for="ccn">Credit Card #</label>
+	</div>
+	<div class="input-field col s4">
+		<input id="ccv" name="ccv" type="text"  /> <label for="ccv">CVV Code (3 or 4 digit #)</label>
+	</div>
+</div>
+<input class="filled-in validate" id="cdsa" name="cdsa" required="" type="checkbox" />
+<label for="cdsa">
+	<b class="serious-text red-text">
+		I authorize this medical practice to process the above credit card as “card on file”. I understand this authorization will remain in effect until the expiration of the credit card account; patient may also revoke this form by submitting a written request to the medical practice.
+	</b>
+</label>
+<br><br>
+<ul>
+  <li style="list-style-type: disc;">
+  	It is the sole responsibility of the patient to make sure that their insurance policy is effective, which is primary and which is secondary if applicable and to inform us of any and all insurance plans and/or changes; insurance policies are an arrangement between the insurance carrier and the patient. Failure to do so will result in the patient being billed for any outstanding claims or money recoveries requests.
+  </li>
+  <li style="list-style-type: disc;">
+  	After the verification of your coverage & deductibles and/or copays this office may accept assignment on most policies provided the insured/patient signs and appropriate statement of benefits and/or a lien authorizing payment to be sent to the doctor. Any medical or other records or information necessary to process any claims will be released from our office. If you have any questions concerning this or any other matter, please speak with the new patient coordinator.
+  </li>
+  <li style="list-style-type: disc;">
+  	If you are unable to make your appointment due to an emergency, please call us and let us know so we can reschedule your appointment. If you need to change the time of your appointment, plan to come another time on the same day.  If the same day is not possible, try to make up the missed appointment within one week as not to disrupt your treatment plan. With the exception of an unexpected emergency, we require that you notify us 6 hours in advance as to any appointment changes to avoid being charged.
+  </li>
+  <li style="list-style-type: disc;">
+  	For no call/no show appointments or cancellations less than 6 hours in advance, there is a non-refundable $50.00 service charge that will be billed to you or your credit card/debit card on file.
+  </li>
+</ul>
+<br> 
+<hr>
+<!-- yousaf job end -->
+
+
+
+<div class="row">
+<p><b class="serious-text">Assignment and Release (insured patients)</b></p>
+<span class="serious-text">I, certify that I (or my dependent) have insurance coverage with </span>
+
+<div class="input-field inline"><input class="validate" name="whomstve" required="" type="text" /></div>
+<span class="serious-text"> and I AUTHORIZE, REQUEST, AND ASSIGN MY INSURANCE COMPANY TO PAY DIRECTLY TO THE PHYSICAL/MEDICAL PRACTICE INSURANCE BENEFITS OTHERWISE PAYABLE TO ME. I understand that I am financially responsible for all charges whether or not paid by insurance. I hereby authorized the doctor to release all information necessary, including diagnosis and the records of any exam or treatment rendered to me, in order to secure the payment of benefits. I authorize the use of this signature on all insurance claims, including electronic submissions. </span>
+
+<p><b><u class="serious-text">Consent to Care</u></b></p>
+<span class="serious-text"> A patient coming to the doctor gives his/her permission and authority to care for them in accordance with the appropriate tests, diagnosis, and analysis. The clinical procedures performed are usually beneficial and seldom cause any problem. In rare cases, underlying physical defects, deformities, or pat or pathologies may render the patient susceptible to injury. The doctor, of course, will not provide specific healthcare if he/she is aware that such care may be contraindicated. It is the responsibility of the patient to make it known or to learn through healthcare procedures from whatever he/she is suffering from latent pathological defects, illnesses or deformities which would otherwise not come to the attention of the physician. I affirm that I am not an agent or representative of any insurance company or any other business trying to collect information. All injuries/problems mentioned are true and I am here solely for the treatment of the said problem. </span><br />
+<br />
+<input class="filled-in validate" id="agreement" name="agreement" required="" type="checkbox" /> <label for="agreement"> <b class="serious-text red-text">*REQUIRED I have read and understood the consent to care. I certify that the above questions were answered accurately. I understand that providing incorrect information can be dangerous to my health. I also understand that my insurance company may be mailing checks payable to me or the insurance subscriber for services rendered. If this should occur I agree that I will sign and bring all check(s) {along with explanations of benefits and/or all documents attached to said check(s)} to the office within 7 days. I am also aware that failure to do so will result in my account being forwarded to the collection department of our attorneys, Kirschenbaum &amp; Kirschenbaum, making me liable for all account balances, attorneys, and court fees.</b> </label>
+
+<p><b class="serious-text">NOTE: Your health information will be kept strictly confidential. Any information that we collect about you on this form will be kept confidential in our office.</b></p>
+</div>
+<input checked="checked" id="hihi" name="imagevalue" style="display: none;" type="radio" /><button class="btn-large waves-effect" type="submit">Submit</button></form>
+</div>
+</main>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script><script type="text/javascript" src="js/fabric.min.js"></script><script type="text/javascript" src="js/index.js"></script></body>
+</html>

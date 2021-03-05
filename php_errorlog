@@ -1,0 +1,2 @@
+[22-Feb-2021 15:13:45 UTC] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/customer/www/alexd42.sg-host.com/public_html/form/PHPMailerAutoload.php on line 45
+[22-Feb-2021 15:47:44 UTC] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/customer/www/nycchiropratic.com/public_html/form/PHPMailerAutoload.php on line 45
